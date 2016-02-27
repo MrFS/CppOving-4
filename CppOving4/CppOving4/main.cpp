@@ -2,7 +2,6 @@
 #include <cstring>
 #include <sstream>
 #include <string>
-//#include "varer.h"
 
 #include <vector>
 
@@ -56,10 +55,11 @@ ostream& operator<<(ostream& out, const Vare& Vare) {
 int main() {
 
 	vector<Vare> varer;
-						//NAVN  | PRIS | ID | GRENSE | ANT PÅ LAGER
-	varer.push_back(Vare("Eple", 2000, 1337, 30, 30));
-	varer.push_back(Vare("Appelsin", 1000, 1338, 30, 50));
-	varer.push_back(Vare("Banan", 3000, 1339, 30, 30));
+						//NAVN    | PRIS |ID |GRENSE |ANT PÅ LAGER
+	varer.push_back(Vare("Eple"    , 15, 1337, 30, 23));
+	varer.push_back(Vare("Banan"   , 22, 1339, 30, 10));
+	varer.push_back(Vare("Appelsin", 20, 1338, 30, 50));
+	
 
 	char valg;
 
